@@ -22,7 +22,7 @@ if opciones_2 == 'Presentación':
     # Alumno a = MATISSE
     col1, col2 = st.columns(2)
     
-    col1.image("m_FOTO.jpg", caption='Matisse', width=300)
+    col1.image("m_FOTO.png", caption='Matisse', width=300)
 
     texto = """
     ¡Hola, qué tal! Soy Matisse Huillca y tengo 20 años, y 
