@@ -9,70 +9,74 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 
-### Opción 1: Menú vertical
-with st.sidebar:
-    opciones = option_menu("Selecciona una sección: ",['Presentación', 'Experiencia', 'Gráficos'] , 
-        icons=['0-circle','1-circle', '2-circle'], menu_icon="filetype-py", default_index=0)
-
 ### Opción 2: Menú horizontal
 opciones_2 = option_menu(
-    menu_title="Selecciona una sección: ", 
+    menu_title="¡Conoce más de nosotras!", 
     options=['Presentación', 'Experiencia', 'Gráficos'], 
-    icons=['0-circle','1-circle', '2-circle'], 
-    menu_icon="cast", default_index=0, orientation="horizontal")
+    icons=['chat-heart','mortarboard-fill', 'bar-chart-line-fill'], 
+    menu_icon="caret-down-square-fill", default_index=0, orientation="horizontal")
 
-if opciones == 'Presentación':
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre del blog</h1>", unsafe_allow_html=True)
+if opciones_2 == 'Presentación':
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>BIENVENIDOS AL MUNDO CODIFICADOR</h1>", unsafe_allow_html=True)
 
-    # Alumno a
+    # Alumno a = MATISSE
     col1, col2 = st.columns(2)
     
-    col1.image("ellie.png", caption='Ellie', width=300)
+    col1.image("m_FOTO.jpg", caption='Matisse', width=300)
 
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres? 
-    ¿De dónde eres? 
-    ¿Qué estudias?
-    ¿Qué te gusta de tu carrera? 
-    ¿Qué te gustaría hacer en el futuro?
-    ¿Qué te gusta hacer en tu tiempo libre?
+    ¡Hola, qué tal! Soy Matisse Huillca y tengo 20 años, y 
+    actualmente me encuentro en la carrera de Publicidad de 
+    la Facultad de Ciencias y Artes de las Comunicaciones 
+    en la Pontificia Universidad Católica del Perú. En mis 
+    tiempos libres prefiero diseñar posts por Canva y me 
+    gusta mucho leer novelas o libros de género romance. 
+    Asimismo, soy fan de películas de ficción como la saga 
+    de Los Juegos del Hambre y la serie de Stranger Things. 
     """
     col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>", unsafe_allow_html=True)
 
-    # Alumno b
+    # Alumno b = jackeline
     col1, col2 = st.columns(2)
     
     texto_2 = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres? 
-    ¿De dónde eres? 
-    ¿Qué estudias? 
-    ¿Qué te gusta de tu carrera? 
-    ¿Qué te gustaría hacer en el futuro? 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    ¡Hola! Soy Jackeline Uscamayta, tengo 20 años. Soy 
+    estudiante de Publicidad, amante de las películas de 
+    terror y de toda situación paranormal. Tengo una colección 
+    de barbies y espero en el futuro tener una colección de 
+    sus casas. Mi comida favorita es el Ají de Gallina pero 
+    el que prepara mi abuelita. En mis tiempos libres, disfruto 
+    cocinar y probar nuevas recetas, grabo y edito videos. Por 
+    último, uno de mis sueños es formar parte de una película de 
+    terror, puede ser como actriz o parte de la dirección de arte.
     """
     col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
     
-    col2.image("ellie.png", caption='Ellie', width=300)
+    col2.image("j_Foto.jpg", caption='Jackeline', width=300)
 
-    # Alumno c
+    # Alumno c = Andrea
     col1, col2 = st.columns(2)
     
-    col1.image("ellie.png", caption='Ellie', width=300)
+    col1.image("a_foto_perfil.jpg", caption='Andrea', width=300)
     
     texto_3 = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres? 
-    ¿De dónde eres? 
-    ¿Qué estudias?
-    ¿Qué te gusta de tu carrera? 
-    ¿Qué te gustaría hacer en el futuro?
-    ¿Qué te gusta hacer en tu tiempo libre?
+    ¡Holaaa! Me llamo Andrea y me dicen Andrea. Tal cual. 
+    Estudio la carrera de Publicidad y soy una persona que 
+    suele estar alegre (me río con facilidad). Me encanta 
+    pasar tiempo con mis amigos y mi familia, compartir 
+    momentos y disfrutar de las pequeñas cosas. Me gusta 
+    la comida que sea rica, aunque no tolero tanto la comida 
+    picante. Este año estoy aprendiendo muchas cosas nuevas, 
+    descubriendo habilidades e intereses que no sabía que tenía. 
+    Y eso es algo que me parece muy bonito. Siento que todavía 
+    tengo mucho por explorar, aprender y experimentar, y eso 
+    es lo que hace que esta etapa sea tan interesante para mí. 
+    Por cierto, soy fan de BTS y últimamente estoy con el mood 
+    de Where You From. ¡Tenía que mencionarlo!
     """
     col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_3}</div>", unsafe_allow_html=True)
     
-elif  opciones == 'Experiencia':
+elif  opciones_2 == 'Experiencia':
 
     st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
 
