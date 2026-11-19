@@ -78,59 +78,92 @@ if opciones_2 == 'Presentación':
     
 elif  opciones_2 == 'Experiencia':
 
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'> CAMINANDO ENTRE CÓDIGOS 👩‍💻</h1>", unsafe_allow_html=True)
 
-    # Alumno a
+    # Alumno a = MATISSE
     texto_4 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio? 
-    ¿Qué te ha enseñado la programación? 
-    ¿Qué te gusta de programar? 
-    ¿Qué te gustaría hacer con la programación en el futuro?
+    Mi experiencia en el curso de Pensamiento Computacional 
+    fue bastante retadora, ya que exigía memorizar diversos 
+    códigos, comprender su función específica y dominar la 
+    estructura correcta de cada uno para lograr que se 
+    ejecutaran sin errores. Al principio me resultó complicado 
+    identificar qué instrucción utilizar según el contexto del 
+    problema y, sobre todo, cómo conectarlas de forma lógica 
+    para que trabajaran en conjunto. Sin embargo, superar esa 
+    curva de aprendizaje no solo me permitió articular distintas 
+    piezas de código para consolidar soluciones funcionales 
+    en cada ejercicio, sino que también me brindó una base 
+    sólida para comprender mejor el área de la programación 
+    y las bases de datos, conocimientos clave en los que podría 
+    especializarme y aplicar en un futuro ámbito profesional 
+    o laboral.  
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_4}</div>", unsafe_allow_html=True)
     
-    # Formato YouTube
-    st.subheader("🎥 Título apropiado video 1")
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
-    
-    # Formato Google Drive
-    st.subheader("🎥 Título apropiado video 2")
+    # VIDEO 1 = MATISSE (FORMATO DRIVE)
+    st.subheader("🎥 Tomando decisiones con los booleanos")
 
     col1, col2, col3 = st.columns([1, 2, 1])
 
     with col2:  
-        st.link_button("🎥 Texto del botón",
-                       "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link",
+        st.link_button("🎥 Expresiones booleanas",
+                       "https://drive.google.com/file/d/1mf-Uk0OcTrBx4EoDLcyjpgaTlafH6mj-/view?usp=sharing",
                        use_container_width=True
             )
 
-    # Alumno b
+    # VIDEO 2 = MATISSE 
+    st.subheader("🎥 Condicionando ando")
+
+    col1, col2, col3 = st.columns([1, 2, 1])
+
+    with col2:  
+        st.link_button("🎥 Expresiones condicionales",
+                       "https://drive.google.com/file/d/14Ul4UGiC8wEPiM2Ey6pneKI_xCuE1bzt/view?usp=sharing",
+                       use_container_width=True
+            )
+    # Alumno b = JACKELINE
     texto_5 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?
-    ¿Qué te ha enseñado la programación?
-    ¿Qué te gusta de programar? 
-    ¿Qué te gustaría hacer con la programación en el futuro?
+    Cuando investigué sobre este curso, me sorprendió al 
+    saber que íbamos a trabajar con Python, al principio 
+    no sabía que era, porque nunca en mi vida lo había 
+    utilizado. A pesar de ello, me sentía entusiasmada 
+    por aprender algo nuevo y así fué. Me gustó mucho 
+    aprender las funciones y métodos de Python y cómo 
+    combinarlos. A medida que avanzábamos, se volvía más 
+    dificultoso. Aún así, seguí estudiando e intentado 
+    tomar todos los apuntes posibles en las horas prácticas 
+    para entender los temas. Para terminar, estoy teniendo 
+    algunas dificultades en cuanto al proyecto final, más 
+    que todo en construir una buena estructura de lo que 
+    queremos hacer. Aún así, considero que se va a resolver 
+    porque con mi grupo estamos intentando hacerlo, tal vez 
+    probando y fallando, pero así aprendemos. 
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_5}</div>", unsafe_allow_html=True)
         
-    # Formato YouTube
-    st.subheader("🎥 Título apropiado video 1")
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
-        
-    # Formato Google Drive
-    st.subheader("🎥 Título apropiado video 2")
+    # VIDEO 1 = JACKELINE (FORMATO DRIVE)
+    st.subheader("🎥 Organizando datos")
     
     col1, col2, col3 = st.columns([1, 2, 1])
     
     with col2:  
-        st.link_button("🎥 Texto del botón",
-                       "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link",
+        st.link_button("🎥 Strings y listas",
+                       "https://drive.google.com/file/d/1Y3dkjkqpairW2EuSyoOUc-5QKneCC7wM/view?usp=sharing",
                        use_container_width=True
              )
-
-    # Alumno c
+    
+    # VIDEO 2 = JACKELINE (FORMATO DRIVE)
+    st.subheader("🎥 Condicionando ando")
+    
+    col1, col2, col3 = st.columns([1, 2, 1])
+    
+    with col2:  
+        st.link_button("🎥 Estructuras condicionales",
+                       "https://drive.google.com/file/d/1mRUM22csNqH5qnMhEiOXL6ZKQ-XwEV2U/view?usp=sharing",
+                       use_container_width=True
+             )
+    
+    # Alumno c = ANDREA 
     texto_6 = """
     Aquí escribe tu experiencia aprendiendo a programar. 
     ¿Cómo te sentiste al principio? 
@@ -140,21 +173,28 @@ elif  opciones_2 == 'Experiencia':
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
         
-    # Formato YouTube
-    st.subheader("🎥 Título apropiado video 1")
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
-        
-    # Formato Google Drive
-    st.subheader("🎥 Título apropiado video 2")
+    # VIDEO 1 = ANDREA
+    st.subheader("🎥 Tomando decisiones con los booleanos")
     
     col1, col2, col3 = st.columns([1, 2, 1])
     
     with col2:  
-        st.link_button("🎥 Texto del botón",
-                       "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link",
+        st.link_button("🎥 Expresiones booleanas",
+                       "https://drive.google.com/file/d/1EtGHLgeBIEuN4wGS7iDvculiR2zuD72Z/view?usp=drivesdk",
                        use_container_width=True
             )
-            
+
+    # VIDEO 2 = ANDREA
+    st.subheader("🎥 Condicionando ando")
+    
+    col1, col2, col3 = st.columns([1, 2, 1])
+    
+    with col2:  
+        st.link_button("🎥 Estructuras condicionales",
+                       "https://drive.google.com/file/d/1P5cZvA5TR3FBQH_ggYLUFgxkKalkuNz_/view?usp=drivesdk",
+                       use_container_width=True
+            )
+
 else:
 
     st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nombre a la sección</h1>", unsafe_allow_html=True)
