@@ -267,7 +267,7 @@ else:
         with col2:
             st.image("m_GRAFICO_BARRAS.png", width=800)
 
-     elif grafico_seleccionado == 'Wordcloud_Matisse':
+    elif grafico_seleccionado == 'Wordcloud_Matisse':
         st.subheader("☁️ Nube de palabras")
         texto_10 = """
         Se convirtió todo el primer capítulo del libro de Mujercitas en 
