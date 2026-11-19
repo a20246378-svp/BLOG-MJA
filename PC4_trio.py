@@ -201,7 +201,7 @@ else:
     
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
-    graficos = ['Histograma_Matisse', "Histograma_Jackeline", "Histograma_Andrea", 'Pastel_Matisse', 'Pastel_Jackeline', 'Pastel_Andrea', "Wordcloud_Matisse", "Wordcloud_Jackeline", "Wordcloud_Andrea", 'Mapa_Matisse', "Mapa_Jackeline", "Mapa_Andrea"] 
+    graficos = ['Histograma_Matisse', 'Pastel_Matisse', "Barras_Matisse", "Wordcloud_Matisse", 'Mapa_Matisse', "Histograma_Jackeline", 'Pastel_Jackeline', "Barras_Jackeline", "Wordcloud_Jackeline", "Mapa_Jackeline", "Histograma_Andrea", 'Pastel_Andrea', "Barras_Andrea", "Wordcloud_Andrea", "Mapa_Andrea"] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
     # MATISSE 
@@ -228,31 +228,49 @@ else:
         with col2:
                 st.image("m_HISTOGRAMA.png", width=800)
 
-    elif grafico_seleccionado == 'Histograma_Jackeline':
-        st.subheader("📊 Histogramas")
+    elif grafico_seleccionado == 'Pastel_Matisse':
+        st.subheader("🍰 Gráfico de pastel")
         texto_8 = """
-        Los goles anotados a nivel local por el equipo Villarreal 
-        son variados. Si bien, hay pocos partidos en los que anota, 
-        se destaca mucho los goles que anotó en más de 8 partidos 
-        que fueron de 2 a 3 goles. Sin embargo, se anotaron de 5 
-        a 6 goles en 3 partidos, los cuales dejan al equipo en una 
-        buena posición. A comparación de los goles recibidos como 
-        visitante, ya que solo llega a recibir 5 goles, lo cual es 
-        bueno, ya que debe acumular más los goles anotados. Además, 
-        solo ha recibido entre 1 a 2 goles en ocho partidos, lo cual 
-        conviene al equipo porque su resultado de goles anotados es 
-        mayor que los recibidos.
+        El gráfico de pastel muestra la distribución de los 
+        resultados del Valencia jugando como local. La mayor 
+        proporción corresponde a los partidos ganados, representando 
+        un 42.1% del total de sus encuentros locales. Por otro 
+        lado, los partidos empatados equivalen al 31.6%, mientras 
+        que los juegos perdidos conforman el 26.3% restante. En 
+        conclusión, el equipo demuestra una clara tendencia 
+        favorable al jugar en su estadio, ya que logró sumar 
+        puntos en la gran mayoría de sus partidos de local. 
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("lengua_familia_GB.png", width=800)
+            st.image("m_GRAFICO_CIRCULAR.png", width=800)
+
+    elif grafico_seleccionado == 'Barras_Matisse':
+        st.subheader("📊 Gráfico de barras")
+        texto_9 = """
+        El gráfico de barras muestra el promedio redondeado de 
+        tarjetas amarillas que recibe cada equipo al jugar en 
+        condición de visitante. Se observa que todos los clubes 
+        se concentran únicamente en un promedio de 2 o 3 tarjetas 
+        amarillas por partido. Equipos como Alaves, Espanol, Getafe, 
+        Sevilla, Sociedad, Vallecano y Villarreal registran el promedio 
+        más alto con 3 tarjetas amarillas, mientras que los demás se 
+        mantienen en 2, por lo que la distribución refleja un 
+        comportamiento disciplinario al no registrar valores 
+        fuera del rango de 3 tarjetas.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("m_GRAFICO_BARRAS.png", width=800)
     
     else:
-        st.subheader("🗺️ Mapa 1: Distribución geográfica")
-        texto_9 = """
-        Interpretación del mapa
+        st.subheader("🌎 Mapa")
+        texto_11 = """
+        luiluhl
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>", unsafe_allow_html=True)
             
