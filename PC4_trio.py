@@ -304,7 +304,28 @@ else:
     else:
         st.subheader("🌎 Mapa")
         texto_11 = """
-        MMMMMMMMMMMMMMMMMMMM
+        La estructuración de la ventana emergente se diseñó bajo un enfoque visual 
+        limpio, jerárquico y centrado, usando etiquetas fundamentales para organizar 
+        la información de los pilotos como la etiqueta i que se implementó para 
+        colocar los nombres de ambos pilotos en cursiva, otorgándoles un estilo 
+        diferenciado y estético dentro de la tarjeta de presentación, asimismo el 
+        h1 para destacar los nombres de los pilotos como un título principal de mayor 
+        tamaño, lo cual permite que se resalte de inmediato al abrir la ventana emergente 
+        y facilitando la identificación rápida del perfil del piloto. Además, la 
+        etiqueta b que se aplicó tanto para resaltar el nombre de la escudería de 
+        cada piloto, dándolo peso visual frente al resto de la información complementaria, 
+        y destacar la palabra "puntaje total" que permite que el lector localice de 
+        manera inmediata la cifra exacta del total de puntaje obtenido de las carreras 
+        por cada piloto, de manera que el valor numérico se mantiene en tipografía 
+        estándar para equilibrar la lectura. Por otro lado, se utilizó un bloque con 
+        alineación central (text-align: center) para mantener una simetría estética y 
+        equilibrada, evitando que los elementos se dispersen alrededor del marcador 
+        geográfico. Por último, se ubicó primero la fotografía del piloto con bordes 
+        redondeados, permitiendo que el usuario identifique visualmente al deportista de 
+        manera inmediata antes de leer los datos textuales, luego el nombre del piloto y 
+        en la parte de abajo se coloca la información complementaria en líneas independientes 
+        correspondiente a la escudería y el puntaje total, permitiendo que se lea la 
+        información de manera secuencial. 
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_11}</div>", unsafe_allow_html=True)
             
@@ -312,4 +333,109 @@ else:
                 html_content = mapa.read()
     
         components.html(html_content,height=600)
+
+    # JACKELINE 
+    if grafico_seleccionado == 'Histograma_Jackeline':
+        st.subheader("📊 Histogramas")
+        texto_12 = """
+        Los goles anotados a nivel local por el equipo Villarreal son 
+        variados. Si bien, hay pocos partidos en los que anota, se 
+        destaca mucho los goles que anotó en más de 8 partidos que fueron 
+        de 2 a 3 goles. Sin embargo, se anotaron de 5 a 6 goles en 3 
+        partidos, los cuales dejan al equipo en una buena posición. A 
+        comparación de los goles recibidos como visitante, ya que solo 
+        llega a recibir 5 goles, lo cual es bueno, ya que debe acumular 
+        más los goles anotados. Además, solo ha recibido entre 1 a 2 
+        goles en ocho partidos, lo cual conviene al equipo porque su 
+        resultado de goles anotados es mayor que los recibidos.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_12}</div>", unsafe_allow_html=True)
+
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+                st.image("j_histograma_jacky.jpg", width=800)
+
+    elif grafico_seleccionado == 'Pastel_Jackeline':
+        st.subheader("🍰 Gráfico de pastel")
+        texto_13 = """
+        El equipo Villarreal tiene un porcentaje mayor de la cantidad 
+        de partidos que ganó como local. Por ello, es un resultado muy 
+        bueno para el equipo, porque es lo que se desea para estar en 
+        una posición alta en La Liga. Además, solo se tiene un 15,8% de 
+        la cantidad de partidos perdidos, cuyo resultado es bajo y por 
+        ende, favorable para el equipo.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_13}</div>", unsafe_allow_html=True)
     
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("j_gráfico_pastel_Villarreal_local.png", width=800)
+
+    elif grafico_seleccionado == 'Barras_Jackeline':
+        st.subheader("📊 Gráfico de barras")
+        texto_14 = """
+        Encontramos que siete equipos tienen un promedio de 3 en cuanto 
+        a las tarjetas amarillas que reciben como visitantes. En cambio, 
+        los demás equipos cuentan con un promedio de 2. Entonces, aquellos 
+        equipos que tienen un promedio alto tienen posibilidades de obtener 
+        una tarjeta roja en otros partidos.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_14}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("j_gráfico_barras_equipos_visitantes.png", width=800)
+
+    elif grafico_seleccionado == 'Wordcloud_Jackeline':
+        st.subheader("☁️ Nube de palabras")
+        texto_15 = """
+        Para comenzar, escogí el libro "El Extranjero" de Albert Camus, 
+        porque me gustaría leer ese libro en mis tiempos libres. Además, 
+        se me hizo sencillo encontrar el libro completo en internet. Por 
+        otro lado, al realizar la limpieza del texto, escogí transformar 
+        las palabras del texto a minúsculas, porque considero que se ve 
+        bien estéticamente y se va a entender mejor. En cuanto a los signos, 
+        eliminé los que estaban dentro del texto como el punto, comillas, 
+        comas, signos de interrogación y exclamación, porque no me iba a 
+        servir al momento de convertir el texto en una lista. Luego, al 
+        crear una lista para eliminar los stopwords, escogí aquellas palabras 
+        cortas de una sílaba que no son importantes dentro del texto y que 
+        no aportan ningún significado y aquellas que son pronombres, artículos, 
+        preposiciones y conjunciones. Solo quería tomar en cuenta las palabras 
+        principales, al menos que tengan dos sílabas a más. Todo ello me 
+        ayudó a tener frecuencias de palabras que tienen mayor relevancia 
+        y puedan reflejarse mucho mejor en la nube de palabras. De esa 
+        manera, se pueden reconocer aquellas palabras que son parte del 
+        cuerpo del libro y lograr que los lectores de este libro puedan 
+        reconocerlas al instante. Es así que los colores que escogí combinan 
+        y dan mayor atractivo a las palabras.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_15}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("j_nube_palabras_extranjero.png", width=800)
+    
+    else:
+        st.subheader("🌎 Mapa")
+        texto_16 = """
+        Como lo hicimos en clase, traté de organizar los datos en el orden 
+        que nos pedían y agregué algunos más en el diccionario de Datos 
+        adicionales, los cuales quería que aparecieran en la tabla para que 
+        después pueda utilizarlos fácilmente en la creación del mapa con 
+        ventana emergente. En el diseño, coloqué sobre todo el nombre de 
+        los pilotos con negrita para que se destacara más. Además, el icono 
+        que usé fue del carro porque tiene mucha relación con el trabajo que 
+        hacen. Elegí el color azul, porque siento que es un color fuerte que 
+        se relaciona con los pilotos. En el primer mapa solo coloqué el nombre 
+        y la Escudería, porque quería probar cómo salía y elegí el color 
+        naranja, para que no sea mucho fuerte, se sienta cálido. Asimismo 
+        elegí el ícono se "user" porque consideraba que no había mucha 
+        información, a comparación del segundo porque es más complejo.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_16}</div>", unsafe_allow_html=True)
+            
+        with open("j_mapa_pilotos_2.html", "r", encoding="utf-8") as mapa:
+                html_content = mapa.read()
+    
+        components.html(html_content,height=600)
