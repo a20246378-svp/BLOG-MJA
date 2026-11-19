@@ -201,11 +201,11 @@ else:
     
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
-    graficos = ['Histograma_Matisse', 'Pastel_Matisse', "Barras_Matisse", "Wordcloud_Matisse", 'Mapa_Matisse', "Histograma_Jackeline", 'Pastel_Jackeline', "Barras_Jackeline", "Wordcloud_Jackeline", "Mapa_Jackeline", "Histograma_Andrea", 'Pastel_Andrea', "Barras_Andrea", "Wordcloud_Andrea", "Mapa_Andrea"] 
+    graficos = ["Gráfico_Histograma", "Gráfico_Pastel", "Gráfico_barras", "Nube_de_palabras", "Mapas"] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
     # MATISSE 
-    if grafico_seleccionado == 'Histograma_Matisse':
+    if grafico_seleccionado == 'Gráfico_Histograma':
         st.subheader("📊 Histogramas")
         texto_7 = """
         En el primer histograma se observa que el equipo de 
@@ -228,7 +228,7 @@ else:
         with col2:
                 st.image("m_HISTOGRAMA.png", width=900)
 
-    elif grafico_seleccionado == 'Pastel_Matisse':
+    elif grafico_seleccionado == 'Gráfico_Pastel':
         st.subheader("🍰 Gráfico de pastel")
         texto_8 = """
         El gráfico de pastel muestra la distribución de los 
@@ -247,7 +247,7 @@ else:
         with col2:
             st.image("m_GRAFICO_CIRCULAR.png", width=800)
 
-    elif grafico_seleccionado == 'Barras_Matisse':
+    elif grafico_seleccionado == 'Gráfico_barras':
         st.subheader("📊 Gráfico de barras")
         texto_9 = """
         El gráfico de barras muestra el promedio redondeado de 
@@ -267,7 +267,7 @@ else:
         with col2:
             st.image("m_GRAFICO_BARRAS.png", width=800)
 
-    elif grafico_seleccionado == 'Wordcloud_Matisse':
+    elif grafico_seleccionado == 'Nube_de_palabras':
         st.subheader("☁️ Nube de palabras")
         texto_10 = """
         Se convirtió todo el primer capítulo del libro de Mujercitas en 
@@ -335,7 +335,7 @@ else:
         components.html(html_content,height=600)
 
     # JACKELINE 
-    if grafico_seleccionado_2 == 'Histograma_Jackeline':
+    if grafico_seleccionado == 'Gráfico_Histograma':
         st.subheader("📊 Histogramas")
         texto_12 = """
         Los goles anotados a nivel local por el equipo Villarreal son 
@@ -355,7 +355,7 @@ else:
         with col2:
                 st.image("j_histograma_jacky.jpg", width=800)
 
-    elif grafico_seleccionado_2 == 'Pastel_Jackeline':
+    elif grafico_seleccionado == 'Gráfico_Pastel':
         st.subheader("🍰 Gráfico de pastel")
         texto_13 = """
         El equipo Villarreal tiene un porcentaje mayor de la cantidad 
@@ -371,7 +371,7 @@ else:
         with col2:
             st.image("j_gráfico_pastel_Villarreal_local.png", width=800)
 
-    elif grafico_seleccionado_2 == 'Barras_Jackeline':
+    elif grafico_seleccionado == 'Gráfico_barras':
         st.subheader("📊 Gráfico de barras")
         texto_14 = """
         Encontramos que siete equipos tienen un promedio de 3 en cuanto 
@@ -386,7 +386,7 @@ else:
         with col2:
             st.image("j_gráfico_barras_equipos_visitantes.png", width=800)
 
-    elif grafico_seleccionado_2 == 'Wordcloud_Jackeline':
+    elif grafico_seleccionado == 'Nube_de_palabras':
         st.subheader("☁️ Nube de palabras")
         texto_15 = """
         Para comenzar, escogí el libro "El Extranjero" de Albert Camus, 
