@@ -226,7 +226,7 @@ else:
 
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-                st.image("m_HISTOGRAMA.png", width=800)
+                st.image("m_HISTOGRAMA.png", width=900)
 
     elif grafico_seleccionado == 'Pastel_Matisse':
         st.subheader("🍰 Gráfico de pastel")
@@ -266,15 +266,49 @@ else:
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
             st.image("m_GRAFICO_BARRAS.png", width=800)
+
+     elif grafico_seleccionado == 'Wordcloud_Matisse':
+        st.subheader("☁️ Nube de palabras")
+        texto_10 = """
+        Se convirtió todo el primer capítulo del libro de Mujercitas en 
+        minúsculas, debido a que se simplificaba el proceso para la eliminación 
+        de los stopwords al funcionar de manera efectiva sin dejar escapar 
+        conectores o palabras innecesarias que comenzaban en una oración. 
+        Asimismo, se eliminaron los números, signos de puntuación estructural, 
+        delimitadores de diálogo e incisos, signos de entonación y variados 
+        tipos de comillas y caracteres tipográficos. La eliminación de estos 
+        caracteres fue indispensable para impedir que se pegaran a las palabras 
+        adyacentes y se registraran las mismas palabras como distintas (como "mamá" 
+        con "mamá,"), en cambio se conservaron las tildes y las palabras para 
+        respetar la ortografía y el significado. Por otro lado, el criterio para 
+        seleccionar las stopwords se basó en excluir palabras de función estrictamente 
+        gramatical (artículos, preposiciones, conjunciones y pronombres) y algunos 
+        conectores que no aportan contenido semántico. En conjunto, estas decisiones 
+        eliminaron el ruido gramatical, permitiendo que la lista de frecuencias y 
+        la de palabras final resalten de forma clara los personajes y las acciones 
+        concretas que realizan. Estas decisiones influyeron de manera determinante 
+        en los resultados, puesto que al eliminar el contenido gramatical innecesario 
+        y consolidar las frecuencias reales, se evitó que conectores vacíos dominaran 
+        el conteo, logrando que la nube de palabras final resalte con la mayor escala 
+        visual a los personajes como Jo, Meg, Beth, Amy y la mamá, así como los temas 
+        o hechos verdaderamente representativos del capítulo elegido como navidad, 
+        regalos, dinero, trabajo y familia, y a los temas verdaderamente representativos 
+        del capítulo como navidad, regalos, dinero y trabajo. 
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_10}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("m_NUBE.png", width=800)
     
     else:
         st.subheader("🌎 Mapa")
         texto_11 = """
-        luiluhl
+        MMMMMMMMMMMMMMMMMMMM
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_11}</div>", unsafe_allow_html=True)
             
-        with open("mapa.html", "r", encoding="utf-8") as mapa:
+        with open("m_mapa_base.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
     
         components.html(html_content,height=600)
