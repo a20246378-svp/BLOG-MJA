@@ -197,23 +197,36 @@ elif  opciones_2 == 'Experiencia':
 
 else:
 
-    st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nombre a la sección</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>CÍRCULOS, COLUMNAS Y COORDENADAS</h1>", unsafe_allow_html=True)
     
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
-    graficos = ['Gráfico_1', 'Gráfico_2', 'Mapa_1'] 
+    graficos = ['Gráfico_h_1', "Gráfico_h_2", "Gráfico_h_3", 'Gráfico_p_1', 'Gráfico_p_2', 'Gráfico_p_3', "nube_1", "nube_2", "nube_3", 'Mapa_1', "Mapa_2", "Mapa_3"] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
-    
-    if grafico_seleccionado == 'Gráfico_1':
-        st.subheader("📊 Gráfico 1: Lenguas aisladas")
+
+    # MATISSE 
+    if grafico_seleccionado == 'Gráfico_h_1':
+        st.subheader("📊 Histogramas")
         texto_7 = """
-        Interpretación del Gráfico 1
+        En el primer histograma se observa que el equipo de 
+        local anotó predominantemente 1 gol por encuentro en 
+        9 partidos, caso contrario, el segundo gráfico muestra 
+        que como visitante el equipo mantuvo su arco en cero 
+        durante 6 partidos, mientras que su valor más recurrente 
+        de goles recibidos fue de 1 gol en 9 partidos. Al comparar 
+        ambos gráficos, se aprecia que el equipo es muy fuerte en 
+        defensa cuando juega de visitante, pues casi nunca le encajan 
+        más de un gol. Asimismo, cuando juega de local demuestra una 
+        efectividad constante en ataque, anotando casi siempre entre 
+        1 y 3 goles. En conclusión, los resultados muestran un 
+        rendimiento equilibrado entre la cantidad de goles que anota 
+        de local y los pocos goles que recibe de visitante. 
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
 
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-                st.image("aisladas_base_datos.png", width=800)
+                st.image("m_HISTOGRAMA.png", width=800)
 
     elif grafico_seleccionado == 'Gráfico_2':
         st.subheader("📊 Gráfico 2: Familias lingüísticas")
