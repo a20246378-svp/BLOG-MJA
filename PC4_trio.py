@@ -335,7 +335,7 @@ else:
         components.html(html_content,height=600)
 
     # JACKELINE 
-    if grafico_seleccionado == 'Histograma_Jackeline':
+    if grafico_seleccionado_2 == 'Histograma_Jackeline':
         st.subheader("📊 Histogramas")
         texto_12 = """
         Los goles anotados a nivel local por el equipo Villarreal son 
@@ -355,7 +355,7 @@ else:
         with col2:
                 st.image("j_histograma_jacky.jpg", width=800)
 
-    elif grafico_seleccionado == 'Pastel_Jackeline':
+    elif grafico_seleccionado_2 == 'Pastel_Jackeline':
         st.subheader("🍰 Gráfico de pastel")
         texto_13 = """
         El equipo Villarreal tiene un porcentaje mayor de la cantidad 
@@ -371,7 +371,7 @@ else:
         with col2:
             st.image("j_gráfico_pastel_Villarreal_local.png", width=800)
 
-    elif grafico_seleccionado == 'Barras_Jackeline':
+    elif grafico_seleccionado_2 == 'Barras_Jackeline':
         st.subheader("📊 Gráfico de barras")
         texto_14 = """
         Encontramos que siete equipos tienen un promedio de 3 en cuanto 
@@ -386,7 +386,7 @@ else:
         with col2:
             st.image("j_gráfico_barras_equipos_visitantes.png", width=800)
 
-    elif grafico_seleccionado == 'Wordcloud_Jackeline':
+    elif grafico_seleccionado_2 == 'Wordcloud_Jackeline':
         st.subheader("☁️ Nube de palabras")
         texto_15 = """
         Para comenzar, escogí el libro "El Extranjero" de Albert Camus, 
