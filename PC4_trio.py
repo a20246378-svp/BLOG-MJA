@@ -208,7 +208,7 @@ else:
     if grafico_seleccionado == 'Histograma_Matisse':
         st.subheader("📊 Histogramas")
         texto_7 = """
-        Matisse: En el primer histograma se observa que el equipo de 
+        En el primer histograma se observa que el equipo de 
         local anotó predominantemente 1 gol por encuentro en 
         9 partidos, caso contrario, el segundo gráfico muestra 
         que como visitante el equipo mantuvo su arco en cero 
@@ -228,10 +228,20 @@ else:
         with col2:
                 st.image("m_HISTOGRAMA.png", width=800)
 
-    elif grafico_seleccionado == 'Gráfico_2':
-        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+    elif grafico_seleccionado == 'Histograma_Jackeline':
+        st.subheader("📊 Histogramas")
         texto_8 = """
-        Interpretación del Gráfico 2
+        Los goles anotados a nivel local por el equipo Villarreal 
+        son variados. Si bien, hay pocos partidos en los que anota, 
+        se destaca mucho los goles que anotó en más de 8 partidos 
+        que fueron de 2 a 3 goles. Sin embargo, se anotaron de 5 
+        a 6 goles en 3 partidos, los cuales dejan al equipo en una 
+        buena posición. A comparación de los goles recibidos como 
+        visitante, ya que solo llega a recibir 5 goles, lo cual es 
+        bueno, ya que debe acumular más los goles anotados. Además, 
+        solo ha recibido entre 1 a 2 goles en ocho partidos, lo cual 
+        conviene al equipo porque su resultado de goles anotados es 
+        mayor que los recibidos.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
