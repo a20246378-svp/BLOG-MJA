@@ -201,14 +201,14 @@ else:
     
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
-    graficos = ['Gráfico_h_1', "Gráfico_h_2", "Gráfico_h_3", 'Gráfico_p_1', 'Gráfico_p_2', 'Gráfico_p_3', "nube_1", "nube_2", "nube_3", 'Mapa_1', "Mapa_2", "Mapa_3"] 
+    graficos = ['Histograma_Matisse', "Histograma_Jackeline", "Histograma_Andrea", 'Pastel_Matisse', 'Pastel_Jackeline', 'Pastel_Andrea', "Wordcloud_Matisse", "Wordcloud_Jackeline", "Wordcloud_Andrea", 'Mapa_Matisse', "Mapa_Jackeline", "Mapa_Andrea"] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
     # MATISSE 
-    if grafico_seleccionado == 'Gráfico_h_1':
+    if grafico_seleccionado == 'Histograma_Matisse':
         st.subheader("📊 Histogramas")
         texto_7 = """
-        En el primer histograma se observa que el equipo de 
+        Matisse: En el primer histograma se observa que el equipo de 
         local anotó predominantemente 1 gol por encuentro en 
         9 partidos, caso contrario, el segundo gráfico muestra 
         que como visitante el equipo mantuvo su arco en cero 
