@@ -2,5 +2,6 @@
 primaryColor="#99181c"
 backgroundColor="#ececec"
 secondaryBackgroundColor="#E8E3D9"
+textColor="#2E2E2E"
 font = "Verdana"
 codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
