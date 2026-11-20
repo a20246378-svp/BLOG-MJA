@@ -220,7 +220,7 @@ else:
 
     # MATISSE 
     if grafico_seleccionado == 'Gráfico_Histograma':
-        st.subheader("📊 Histogramas ")
+        st.subheader("📊 Histogramas: Matisse")
         texto_7 = """
         En el primer histograma se observa que el equipo de 
         local anotó predominantemente 1 gol por encuentro en 
@@ -243,7 +243,7 @@ else:
                 st.image("m_HISTOGRAMA.png", width=900)
 
     elif grafico_seleccionado == 'Gráfico_Pastel':
-        st.subheader("🍰 Gráfico de pastel")
+        st.subheader("🍰 Gráfico de pastel: Matisse")
         texto_8 = """
         El gráfico de pastel muestra la distribución de los 
         resultados del Valencia jugando como local. La mayor 
@@ -262,7 +262,7 @@ else:
             st.image("m_GRAFICO_CIRCULAR.png", width=800)
 
     elif grafico_seleccionado == 'Gráfico_barras':
-        st.subheader("📊 Gráfico de barras")
+        st.subheader("📊 Gráfico de barras: Matisse")
         texto_9 = """
         El gráfico de barras muestra el promedio redondeado de 
         tarjetas amarillas que recibe cada equipo al jugar en 
@@ -282,7 +282,7 @@ else:
             st.image("m_GRAFICO_BARRAS.png", width=800)
 
     elif grafico_seleccionado == 'Nube_de_palabras':
-        st.subheader("☁️ Nube de palabras")
+        st.subheader("☁️ Nube de palabras: Matisse")
         texto_10 = """
         Se convirtió todo el primer capítulo del libro de Mujercitas en 
         minúsculas, debido a que se simplificaba el proceso para la eliminación 
@@ -350,7 +350,7 @@ else:
 
     # JACKELINE 
     if grafico_seleccionado == 'Gráfico_Histograma':
-        st.subheader("📊 Histogramas")
+        st.subheader("📊 Histogramas: Jackeline")
         texto_12 = """
         Los goles anotados a nivel local por el equipo Villarreal son 
         variados. Si bien, hay pocos partidos en los que anota, se 
@@ -370,7 +370,7 @@ else:
                 st.image("j_histograma_jacky.jpg", width=800)
 
     elif grafico_seleccionado == 'Gráfico_Pastel':
-        st.subheader("🍰 Gráfico de pastel")
+        st.subheader("🍰 Gráfico de pastel: Jackeline")
         texto_13 = """
         El equipo Villarreal tiene un porcentaje mayor de la cantidad 
         de partidos que ganó como local. Por ello, es un resultado muy 
@@ -386,7 +386,7 @@ else:
             st.image("j_gráfico_pastel_Villarreal_local.png", width=800)
 
     elif grafico_seleccionado == 'Gráfico_barras':
-        st.subheader("📊 Gráfico de barras")
+        st.subheader("📊 Gráfico de barras: Jackeline")
         texto_14 = """
         Encontramos que siete equipos tienen un promedio de 3 en cuanto 
         a las tarjetas amarillas que reciben como visitantes. En cambio, 
@@ -401,7 +401,7 @@ else:
             st.image("j_gráfico_barras_equipos_visitantes.png", width=800)
 
     elif grafico_seleccionado == 'Nube_de_palabras':
-        st.subheader("☁️ Nube de palabras")
+        st.subheader("☁️ Nube de palabras: Jackeline")
         texto_15 = """
         Para comenzar, escogí el libro "El Extranjero" de Albert Camus, 
         porque me gustaría leer ese libro en mis tiempos libres. Además, 
@@ -431,7 +431,7 @@ else:
             st.image("j_nube_palabras_extranjero.png", width=800)
     
     else:
-        st.subheader("🌎 Mapa")
+        st.subheader("🌎 Mapa: Jackeline")
         texto_16 = """
         Como lo hicimos en clase, traté de organizar los datos en el orden 
         que nos pedían y agregué algunos más en el diccionario de Datos 
@@ -456,7 +456,7 @@ else:
 
     # ANDREA
     if grafico_seleccionado == 'Gráfico_Histograma':
-        st.subheader("📊 Histogramas")
+        st.subheader("📊 Histogramas: Andrea")
         texto_17 = """
         Estos gráficos precisan el desempeño del equipo Elche en los 19 
         partidos, en lo cual se muestra los goles anotados como local 
@@ -479,7 +479,7 @@ else:
                 st.image("a_histograma_ELCHE_3.png", width=800)
 
     elif grafico_seleccionado == 'Gráfico_Pastel':
-        st.subheader("🍰 Gráfico de pastel")
+        st.subheader("🍰 Gráfico de pastel: Andrea")
         texto_18 = """
         El gráfico circular muestra la distribución porcentual de los 
         resultados obtenidos del equipo de Elche al jugar en su 
@@ -496,7 +496,7 @@ else:
             st.image("a_pie_ELCHE_local.png", width=800)
 
     elif grafico_seleccionado == 'Gráfico_barras':
-        st.subheader("📊 Gráfico de barras")
+        st.subheader("📊 Gráfico de barras: Andrea")
         texto_19 = """
         El gráfico de barras presenta el promedio de tarjetas amarillas como 
         visitante por los 20 equipos que compiten. Se aprecia que la mayoría 
@@ -513,7 +513,7 @@ else:
             st.image("a_barras_amarillas.png", width=800)
 
     elif grafico_seleccionado == 'Nube_de_palabras':
-        st.subheader("☁️ Nube de palabras")
+        st.subheader("☁️ Nube de palabras: Andrea")
         texto_20 = """
         Luego aparecerá, esperen :).
         """
@@ -524,7 +524,7 @@ else:
             st.image("a_nube_palabras.png", width=800)
     
     else:
-        st.subheader("🌎 Mapa")
+        st.subheader("🌎 Mapa: Andrea")
         texto_21 = """
         Luego aparecerá, esperen :).
         """
