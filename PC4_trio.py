@@ -220,7 +220,7 @@ else:
 
     # MATISSE 
     if grafico_seleccionado == 'Gráfico_Histograma':
-        st.subheader("📊 Histogramas")
+        st.subheader("📊 Histogramas ")
         texto_7 = """
         En el primer histograma se observa que el equipo de 
         local anotó predominantemente 1 gol por encuentro en 
