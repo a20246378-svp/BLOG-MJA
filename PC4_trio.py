@@ -165,11 +165,25 @@ elif  opciones_2 == 'Experiencia':
     
     # Alumno c = ANDREA 
     texto_6 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio? 
-    ¿Qué te ha enseñado la programación? 
-    ¿Qué te gusta de programar? 
-    ¿Qué te gustaría hacer con la programación en el futuro?
+    Al iniciar este curso, estuve entusiasmada por la noticia 
+    que iba a aprender a programar por primera vez ＼(^-^)／. 
+    Recordé vagamente algunas de las últimas clases de un curso 
+    del colegio, en las que el profesor nos enseñó temas relacionados 
+    a HTML. Por ello, estaba emocionada con la enseñanza de Python. 
+    Sin embargo, durante mi proceso, sí que fue realmente retador. 
+    Las clases se volvían poco a poco difíciles para mí, pero pude 
+    afrontarlo de buena manera ☆. A pesar de ello, también rescato 
+    ciertas cosas que me gustaron demasiado, como la función input, 
+    que permite solicitar una respuesta del usuario y combinarla con 
+    estructuras condicionales. Además, algo que me llamó demasiada 
+    la atención fue la nube de palabras y su respecto proceso de 
+    depuración para llegar a ella. ¡Fue muy lindo tot!. Admito que, 
+    con las clases teóricas y prácticas, programar me ha enseñado que 
+    hay diversas formas de solucionar un problema. ¡EL PENSAMIENTO 
+    DIVERGENTE! Finalmente, en el futuro me gustaría seguir aprendiendo 
+    de programación y aplicarlas a mi carrera, desarrollando proyectos 
+    creativos e interactivos que combinen la tecnología y la 
+    comunicación ＼(_ _). 
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
         
