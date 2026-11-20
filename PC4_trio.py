@@ -316,7 +316,7 @@ else:
             st.image("m_NUBE.png", width=800)
     
     else:
-        st.subheader("🌎 Mapa")
+        st.subheader("🌎 Mapa: Matisse")
         texto_11 = """
         La estructuración de la ventana emergente se diseñó bajo un enfoque visual 
         limpio, jerárquico y centrado, usando etiquetas fundamentales para organizar 
