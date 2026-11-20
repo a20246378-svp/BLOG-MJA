@@ -176,7 +176,7 @@ elif  opciones_2 == 'Experiencia':
     ciertas cosas que me gustaron demasiado, como la función input, 
     que permite solicitar una respuesta del usuario y combinarla con 
     estructuras condicionales. Además, algo que me llamó demasiada 
-    la atención fue la nube de palabras y su respecto proceso de 
+    la atención fue la nube de palabras y su respectivo proceso de 
     depuración para llegar a ella. ¡Fue muy lindo tot!. Admito que, 
     con las clases teóricas y prácticas, programar me ha enseñado que 
     hay diversas formas de solucionar un problema. ¡EL PENSAMIENTO 
