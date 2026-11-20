@@ -453,3 +453,112 @@ else:
                 html_content = mapa.read()
     
         components.html(html_content,height=600)
+
+    # ANDREA
+    if grafico_seleccionado == 'Gráfico_Histograma':
+        st.subheader("📊 Histogramas")
+        texto_17 = """
+        Estos gráficos precisan el desempeño del equipo Elche en los 19 
+        partidos, en lo cual se muestra los goles anotados como local 
+        (gráfico-izquierda) y los goles recibidos como visitante 
+        (gráfico-derecha). Por un lado, el equipo presenta que su distribución 
+        está concentrada en los goles anotados con valores bajos. Por ejemplo, 
+        existe un gol en 8 partidos. Por otro lado, cuando el equipo juega 
+        como visitante, se observan dos casos en los que sus goles recibidos 
+        son altos. Por ejemplo, tenemos que en 8 partidos el equipo recibe 
+        1 gol; y, en 6 partidos recibe 3 goles. Al comparar ambos gráficos, 
+        se precisa que, si bien el máximo de los goles fue de 4, Elche recibe 
+        más goles como visitante (evidenciado en los 11 partidos con 2 a más 
+        goles en contra) que de los que anota cuando juega en su localidad 
+        (evidenciado en los 9 partidos con 2 a más goles).
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_17}</div>", unsafe_allow_html=True)
+
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+                st.image("j_histograma_jacky.jpg", width=800)
+
+    elif grafico_seleccionado == 'Gráfico_Pastel':
+        st.subheader("🍰 Gráfico de pastel")
+        texto_13 = """
+        El equipo Villarreal tiene un porcentaje mayor de la cantidad 
+        de partidos que ganó como local. Por ello, es un resultado muy 
+        bueno para el equipo, porque es lo que se desea para estar en 
+        una posición alta en La Liga. Además, solo se tiene un 15,8% de 
+        la cantidad de partidos perdidos, cuyo resultado es bajo y por 
+        ende, favorable para el equipo.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_13}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("j_gráfico_pastel_Villarreal_local.png", width=800)
+
+    elif grafico_seleccionado == 'Gráfico_barras':
+        st.subheader("📊 Gráfico de barras")
+        texto_14 = """
+        Encontramos que siete equipos tienen un promedio de 3 en cuanto 
+        a las tarjetas amarillas que reciben como visitantes. En cambio, 
+        los demás equipos cuentan con un promedio de 2. Entonces, aquellos 
+        equipos que tienen un promedio alto tienen posibilidades de obtener 
+        una tarjeta roja en otros partidos.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_14}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("j_gráfico_barras_equipos_visitantes.png", width=800)
+
+    elif grafico_seleccionado == 'Nube_de_palabras':
+        st.subheader("☁️ Nube de palabras")
+        texto_15 = """
+        Para comenzar, escogí el libro "El Extranjero" de Albert Camus, 
+        porque me gustaría leer ese libro en mis tiempos libres. Además, 
+        se me hizo sencillo encontrar el libro completo en internet. Por 
+        otro lado, al realizar la limpieza del texto, escogí transformar 
+        las palabras del texto a minúsculas, porque considero que se ve 
+        bien estéticamente y se va a entender mejor. En cuanto a los signos, 
+        eliminé los que estaban dentro del texto como el punto, comillas, 
+        comas, signos de interrogación y exclamación, porque no me iba a 
+        servir al momento de convertir el texto en una lista. Luego, al 
+        crear una lista para eliminar los stopwords, escogí aquellas palabras 
+        cortas de una sílaba que no son importantes dentro del texto y que 
+        no aportan ningún significado y aquellas que son pronombres, artículos, 
+        preposiciones y conjunciones. Solo quería tomar en cuenta las palabras 
+        principales, al menos que tengan dos sílabas a más. Todo ello me 
+        ayudó a tener frecuencias de palabras que tienen mayor relevancia 
+        y puedan reflejarse mucho mejor en la nube de palabras. De esa 
+        manera, se pueden reconocer aquellas palabras que son parte del 
+        cuerpo del libro y lograr que los lectores de este libro puedan 
+        reconocerlas al instante. Es así que los colores que escogí combinan 
+        y dan mayor atractivo a las palabras.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_15}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("j_nube_palabras_extranjero.png", width=800)
+    
+    else:
+        st.subheader("🌎 Mapa")
+        texto_16 = """
+        Como lo hicimos en clase, traté de organizar los datos en el orden 
+        que nos pedían y agregué algunos más en el diccionario de Datos 
+        adicionales, los cuales quería que aparecieran en la tabla para que 
+        después pueda utilizarlos fácilmente en la creación del mapa con 
+        ventana emergente. En el diseño, coloqué sobre todo el nombre de 
+        los pilotos con negrita para que se destacara más. Además, el icono 
+        que usé fue del carro porque tiene mucha relación con el trabajo que 
+        hacen. Elegí el color azul, porque siento que es un color fuerte que 
+        se relaciona con los pilotos. En el primer mapa solo coloqué el nombre 
+        y la Escudería, porque quería probar cómo salía y elegí el color 
+        naranja, para que no sea mucho fuerte, se sienta cálido. Asimismo 
+        elegí el ícono se "user" porque consideraba que no había mucha 
+        información, a comparación del segundo porque es más complejo.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_16}</div>", unsafe_allow_html=True)
+            
+        with open("j_mapa_pilotos_2.html", "r", encoding="utf-8") as mapa:
+                html_content = mapa.read()
+    
+        components.html(html_content,height=600)
