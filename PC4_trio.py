@@ -526,7 +526,22 @@ else:
     else:
         st.subheader("🌎 Mapa: Andrea")
         texto_21 = """
-        Luego aparecerá, esperen :).
+        La realización del mapa mediante Folium fue realmente retador. Tomé como 
+        guía las clases trabajadas y comencé importando las librerías a usar 
+        (pandas y folium), además de leer la base de datos mediante df. Después, 
+        seleccioné a los dos pilotos: Hamilton y Vettel. Los elegí ya que sus 
+        ubicaciones me ayudaban a establecer un punto medio para centrar el mapa. 
+        Calculé sus puntajes totales y organicé información adicional en un diccionario 
+        como sus escuderías, fotografías, latitudes y longitudes. Luego, llegué a la 
+        parte más complicada: conectar el diccionario con el mapa. Para solucionarlo, 
+        usé la función for y estructuras condicionales. También personalicé los marcadores 
+        con una bandera para aludir a la meta de carrera de Fórmula 1, y creé ventanas 
+        emergentes (popups) para mostrar la información de cada piloto. En esta parte, 
+        decidí organizar la información de manera sencilla para que el espectador 
+        lo pueda entender. Utilicé los elementos HTML para presentar su fotografía y organizar 
+        la información complementaria, como su nombre y escudería. De esta manera, combiné 
+        texto e imágenes en un mismo espacio, haciendo que la información fuera más 
+        interactivo, ¡Y SALIÓ! ¡Al fin!
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_21}</div>", unsafe_allow_html=True)
             
