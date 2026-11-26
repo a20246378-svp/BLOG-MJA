@@ -515,7 +515,21 @@ else:
     elif grafico_seleccionado == 'Nube_de_palabras':
         st.subheader("☁️ Nube de palabras: Andrea")
         texto_20 = """
-        Luego aparecerá, esperen :).
+        Para realizar la nube de palabras (WordCloud), primero tuve que convertir el 
+        archivo de mi libro de PDF a TXT, pues no encontraba el capítulo en páginas 
+        abiertas que sean confiables. Luego, subí el archivo a Google Colab y lo guardé en una 
+        variable. También imprimí el contenido completo del capítulo para visualizar 
+        los signos de puntuación y otros aspectos que podían interferir en el resultado.
+        Comenzando con la depuración, decidí trabajar con letras minúsculas por una 
+        cuestión visual, porque considero que se perciben mejor en estas. Asimismo, eliminé 
+        los signos de puntuación y caracteres que no aportaban información relevante. 
+        En cuanto a las stopwords, busqué listas de palabras en internet y seleccioné 
+        aquellas que no aportaban significado importante al contenido del capítulo. 
+        De esta manera, se eliminó artículos, preposiciones y otras palabras frecuentes. 
+        Finalmente, estas decisiones ayudaron a que las frecuencias se concentraran 
+        en las palabras más representativas del texto, haciendo posible que la visualización 
+        reflejara mejor la esencia del capítulo, sus personajes, lugares y otros elementos 
+        importantes.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_20}</div>", unsafe_allow_html=True)
     
