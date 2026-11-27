@@ -22,7 +22,7 @@ if opciones_2 == 'Presentación':
     # Alumno a = MATISSE
     col1, col2 = st.columns(2)
     
-    col1.image("m_FOTO.png", caption='Matisse', width=300)
+    col1.image("m_FOTO.png", caption='Matisse', font-size=20px, width=300)
 
     texto = """
     ¡Hola, qué tal! Soy Matisse Huillca y tengo 20 años, y 
@@ -50,7 +50,7 @@ if opciones_2 == 'Presentación':
     último, uno de mis sueños es formar parte de una película de 
     terror, puede ser como actriz o parte de la dirección de arte.
     """
-    col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
+    col1.markdown(f"<div style='text-align: justify; font-size: 20px;'>{texto_2}</div>", unsafe_allow_html=True)
     
     col2.image("j_Foto.jpg", caption='Jackeline', width=300)
 
