@@ -17,7 +17,7 @@ opciones_2 = option_menu(
     menu_icon="caret-down-square-fill", default_index=0, orientation="horizontal")
 
 if opciones_2 == 'Presentación':
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>BIENVENIDOS AL MUNDO CODIFICADOR</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 40 px; color: black'>BIENVENIDOS AL MUNDO CODIFICADOR</h1>", unsafe_allow_html=True)
 
     # Alumno a = MATISSE
     col1, col2 = st.columns(2)
@@ -78,7 +78,7 @@ if opciones_2 == 'Presentación':
     
 elif  opciones_2 == 'Experiencia':
 
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'> CAMINANDO ENTRE CÓDIGOS 👩‍💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 40 px; color: black'> CAMINANDO ENTRE CÓDIGOS 👩‍💻</h1>", unsafe_allow_html=True)
 
     # Alumno a = MATISSE
     texto_4 = """
@@ -211,7 +211,7 @@ elif  opciones_2 == 'Experiencia':
 
 else:
 
-    st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>CÍRCULOS, COLUMNAS Y COORDENADAS 🧚‍♀️</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;font-size: 40 px; color: black'>CÍRCULOS, COLUMNAS Y COORDENADAS 🧚‍♀️</h1>", unsafe_allow_html=True)
     
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
