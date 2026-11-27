@@ -1,7 +1,7 @@
 [theme]
 primaryColor="#BC7DFF"
 backgroundColor="#FFD6FB"
-secondaryBackgroundColor="#C393F6"
+secondaryBackgroundColor="#FF51EE"
 textColor="#2E2E2E"
 font = "Lato:https://fonts.googleapis.com/css2?family=Lato&display=swap"
 codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
