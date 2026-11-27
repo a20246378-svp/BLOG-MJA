@@ -34,7 +34,7 @@ if opciones_2 == 'Presentación':
     Asimismo, soy fan de películas de ficción como la saga 
     de Los Juegos del Hambre y la serie de Stranger Things. 
     """
-    col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>", unsafe_allow_html=True)
+    col2.markdown(f"<div style='text-align: justify; font-size: 20px;'>{texto}</div>", unsafe_allow_html=True)
 
     # Alumno b = jackeline
     col1, col2 = st.columns(2)
@@ -74,7 +74,7 @@ if opciones_2 == 'Presentación':
     Por cierto, soy fan de BTS y últimamente estoy con el mood 
     de Where You From. ¡Tenía que mencionarlo!
     """
-    col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_3}</div>", unsafe_allow_html=True)
+    col2.markdown(f"<div style='text-align: justify; font-size: 20px;'>{texto_3}</div>", unsafe_allow_html=True)
     
 elif  opciones_2 == 'Experiencia':
 
